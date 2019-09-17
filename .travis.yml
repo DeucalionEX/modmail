@@ -6,7 +6,7 @@ matrix:
     dist: xenial
 
 install:
-  - pipenv install -d
+  - pip install -r requirements.txt
+  - pip install pylint
 
-script:
-  - pipenv run python .lint.py
+script: python .lint.py
